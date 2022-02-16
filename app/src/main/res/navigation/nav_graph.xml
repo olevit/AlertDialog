@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graf"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.alertdialog.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.alertdialog.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+
+    <fragment
+        android:id="@+id/screenFragment"
+        android:name="com.example.alertdialog.ScreenSlidePagerFragment"
+        android:label="fragment_screen"
+        tools:layout="@layout/fragment_screen_slide" />
+
+    <fragment
+        android:id="@+id/chipFragment"
+        android:name="com.example.alertdialog.ChipFragment"
+        android:label="fragment_chip"
+        tools:layout="@layout/chip_fragment" />
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.example.alertdialog.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" />
+</navigation>
